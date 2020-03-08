@@ -14,7 +14,7 @@ int main() {
     cout << "podaj rozmiar kwadratu ";
     cin>>n;
     int tablica[n][n];
-    int przekatna[1][n];
+    int przekatna[2][n];
 
     srand(time(NULL));
 
@@ -28,9 +28,6 @@ int main() {
                 przekatna[1][j]=tablica[i][j]; }
                }
     }
-     //losowe przypisanie przekatnej do tablicy bo nie wiedziec czemu
-     //tablica[0][0] zmienia wartosc w polowie fora losojucego
-        przekatna[0][0]=tablica[0][0];
     for(i=0; i<n;i++){
         for(j=0;j<n;j++){
             cout<<tablica[i][j]<<" ";
